@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1200</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1200</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Программа диагностики</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>1181</width>
+      <height>571</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>3</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Выбор элементов поражения для анализа</string>
+     </attribute>
+     <widget class="QTableView" name="elptb">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>611</width>
+        <height>201</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTableView" name="propelptb">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>270</y>
+        <width>1151</width>
+        <height>261</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="elpphoto">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>30</y>
+        <width>200</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>221</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Таблица элементов поражения</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>240</y>
+        <width>351</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Таблица свойств элементов поражения</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab2">
+     <attribute name="title">
+      <string>Таблица анализа заболеваний</string>
+     </attribute>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>241</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Таблица результатов анализа заболеваний</string>
+      </property>
+     </widget>
+     <widget class="QTableView" name="tabbolanalize">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>621</width>
+        <height>471</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="tabanalizeButton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>510</y>
+        <width>191</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Сформировать таблицу анализа</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="descbol">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>30</y>
+        <width>511</width>
+        <height>250</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>10</y>
+        <width>171</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Описание заболевания</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="clearchecksButton">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>510</y>
+        <width>151</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Сбросить все отметки</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="bolphoto">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>300</y>
+        <width>200</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>870</x>
+        <y>510</y>
+        <width>281</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="prevbolphotoButton">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>510</y>
+        <width>100</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Предыдущая</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="nextbolphotoButton">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>510</y>
+        <width>100</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Следующая</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab3">
+     <attribute name="title">
+      <string>Таблица форм заболеваний</string>
+     </attribute>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>141</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Формы заболевания</string>
+      </property>
+     </widget>
+     <widget class="QTableView" name="tbfb">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>501</width>
+        <height>501</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>10</y>
+        <width>181</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Описание формы заболевания</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="descfb">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>30</y>
+        <width>631</width>
+        <height>250</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="fbolphoto">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>290</y>
+        <width>200</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="prevfbolphotoButton">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>500</y>
+        <width>100</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Предыдущая</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="nextfbolphotoButton">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>500</y>
+        <width>100</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Следующая</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>500</y>
+        <width>281</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Таблица схожих заболеваний</string>
+     </attribute>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>271</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Схожие заболевания</string>
+      </property>
+     </widget>
+     <widget class="QTableView" name="tbsh">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>500</width>
+        <height>501</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="descsh">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>30</y>
+        <width>631</width>
+        <height>250</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>10</y>
+        <width>341</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Описание заболевания</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="shbolphoto">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>290</y>
+        <width>200</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="prevshbolphotoButton">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>500</y>
+        <width>100</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Предыдущая</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="nextshbolphotoButton">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>500</y>
+        <width>100</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Следующая</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>500</y>
+        <width>281</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Описание схемы лечения</string>
+     </attribute>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>231</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Описание лечения</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="shemalecheniya">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>1151</width>
+        <height>501</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
